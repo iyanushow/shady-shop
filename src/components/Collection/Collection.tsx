@@ -3,7 +3,7 @@ import { StyledSection, StyledContainer, StyledTitle, StyledBox } from './Collec
 interface Props {}
 const Collection = ({}: Props) => {
   return (
-    <StyledSection id='featured'>
+    <StyledSection>
       <StyledContainer className='bd__grid'>
         <StyledBox>
           <img src='/images/backpackMan.png' alt='backpack-man' className='collection__img' />

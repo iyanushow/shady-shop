@@ -52,4 +52,21 @@ export const GlobalStyle = createGlobalStyle`
   margin: 0 ${(props) => props.theme.margin.m3} 0 ${(props) => props.theme.margin.m3};
 
   }
+
+  /*sections*/
+    
+  .section__title{
+    font-size: ${(props) => props.theme.font.size.small};
+    color: ${(props) => props.theme.color.dark};
+    margin:2rem 0 .5rem;
+    text-align: center;
+  }
+  .section__all{
+    display: block;
+    font-size:${(props) => props.theme.font.size.tiny};
+    color:${(props) => props.theme.color.darkAlt};
+    text-align:center;
+    margin-bottom:1rem;
+  }
+
 `;
