@@ -4,15 +4,13 @@ interface Props {}
 const Hero = ({}: Props) => {
   return (
     <StyledSection id='home'>
-      <StyledContainer>
+      <StyledContainer className='bd__grid'>
         <div className='home__data'>
           <StyledTitle>
             new <br />
             <span>arrivals</span>
           </StyledTitle>
-          <a href='' id='featured'>
-            go shopping
-          </a>
+          <button className='button__cta'>go shopping</button>
         </div>
         <img src='/images/home.png' alt='' className='hero__img' />
       </StyledContainer>

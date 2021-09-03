@@ -10,15 +10,8 @@ export const StyledHeader = styled.header`
 `;
 
 export const StyledNav = styled.nav`
-  max-width: ${(props) => props.theme.body.maxWidth};
-  display: grid;
-  grid-template-columns: 100%;
-  column-gap: 2rem;
-  width: calc(100% - 3rem);
-  margin: 0 ${(props) => props.theme.margin.m3} 0 ${(props) => props.theme.margin.m3};
-
   height: ${(props) => props.theme.header.headerHeight};
-  display: flex;
+  display: flex !important;
   justify-content: space-between;
   align-items: center;
 `;

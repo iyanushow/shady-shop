@@ -28,4 +28,28 @@ export const GlobalStyle = createGlobalStyle`
     max-width: 100%;
     height: auto;
   }
+  button.button__cta {
+    text-transform: capitalize;
+    display: inline-block;
+    background-color: ${(props) => props.theme.color.mainColor};
+    color: ${(props) => props.theme.color.white};
+    padding: 1rem 2rem;
+    border: none;
+    font-size: ${(props) => props.theme.font.size.tiny};
+    font-weight: ${(props) => props.theme.font.weight.semi};
+    transition: all 0.3s;
+    cursor: pointer;
+    &:hover {
+      background-color: ${(props) => props.theme.color.mainColorAlt};
+    }
+  }
+  .bd__grid{
+    max-width: ${(props) => props.theme.body.maxWidth};
+  display: grid;
+  grid-template-columns: 100%;
+  column-gap: 2rem;
+  width: calc(100% - 3rem);
+  margin: 0 ${(props) => props.theme.margin.m3} 0 ${(props) => props.theme.margin.m3};
+
+  }
 `;

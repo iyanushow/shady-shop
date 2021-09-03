@@ -42,9 +42,9 @@ const Header = (): JSX.Element => {
   };
   return (
     <StyledHeader>
-      <StyledNav>
+      <StyledNav className='bd__grid'>
         <StyledLogo>
-          <a href='/' className='nav__logo'>
+          <a href='#' className='nav__logo'>
             SHADY
           </a>
         </StyledLogo>
