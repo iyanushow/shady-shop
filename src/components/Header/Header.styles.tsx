@@ -61,20 +61,3 @@ export const StyledIcons = styled.div`
     cursor: pointer;
   }
 `;
-
-// .section{
-//   padding: 3rem 0;
-// }
-// .section - title{
-//   fontsize:
-//   color: dark
-//   margin: 4 0 1
-//   text-align center
-// }
-// .section - all{
-//   display block
-//   font small
-//   color dark alt
-//   textalign center
-//   margin-bottom 2
-// }

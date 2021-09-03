@@ -9,30 +9,13 @@ import {
 } from './Header.styles';
 import { Cart, Menu } from '@styled-icons/boxicons-regular';
 import { useState } from 'react';
-// interface IProps {}
+interface IProps {
+  data: { id: number; title: string }[];
+}
 
-const data: { id: number; title: string }[] = [
-  {
-    id: 1,
-    title: 'home',
-  },
-  {
-    id: 2,
-    title: 'featured',
-  },
-  {
-    id: 3,
-    title: 'new',
-  },
-  {
-    id: 4,
-    title: 'subscribed',
-  },
-];
-// {}: IProps
-const Header = (): JSX.Element => {
+const Header = ({ data }: IProps): JSX.Element => {
   const [isNavOpen, setIsNavOpen] = useState(false);
-  const [activeArr, setActiveArr] = useState(data.map((product, i) => i === 0 || false));
+  const [activeArr, setActiveArr] = useState(data.map((_, i) => i === 0 || false));
   const toggleNav = (): void => {
     setIsNavOpen((prev) => !prev);
   };
