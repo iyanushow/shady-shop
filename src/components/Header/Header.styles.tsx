@@ -14,6 +14,11 @@ export const StyledNav = styled.nav`
   display: flex !important;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: 768px) {
+    height: 4rem;
+    justify-content: initial;
+  }
 `;
 export const StyledMenu = styled.div`
   @media (max-width: 768px) {
@@ -30,13 +35,20 @@ export const StyledMenu = styled.div`
       right: 0;
     }
   }
+  @media (min-width: 768px) {
+    margin-left: auto;
+  }
 `;
 export const StyledLogo = styled.div`
   a.nav__logo {
     font-weight: ${(props) => props.theme.font.weight.bold};
   }
 `;
-export const StyledUl = styled.ul``;
+export const StyledUl = styled.ul`
+  @media (min-width: 768px) {
+    display: flex;
+  }
+`;
 export const StyledListItem = styled.li`
   margin-bottom: ${(props) => props.theme.margin.m4};
   text-transform: capitalize;
@@ -51,6 +63,11 @@ export const StyledListItem = styled.li`
       color: ${(props) => props.theme.color.mainColor};
     }
   }
+
+  @media (min-width: 768px) {
+    margin-left: ${(props) => props.theme.margin.m4};
+    margin-bottom: 0;
+  }
 `;
 export const StyledIcons = styled.div`
   font-size: 1.5rem;
@@ -59,5 +76,9 @@ export const StyledIcons = styled.div`
   }
   .nav__toggle {
     cursor: pointer;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
   }
 `;

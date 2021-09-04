@@ -10,9 +10,30 @@ export const StyledContainer = styled.div`
     right: 0;
     bottom: 0;
     width: 260px;
+    @media (min-width: 768px) {
+      width: 370px;
+    }
+
+    @media (min-width: 1440px) {
+      right: 15%;
+    }
   }
   & > div {
     padding-top: 6rem;
+  }
+  .home__data {
+    @media (min-width: 768px) {
+      padding: 0;
+      height: max-content;
+      align-self: center;
+    }
+
+    @media (min-width: 1440px) {
+      padding-left: 7rem;
+    }
+  }
+  @media (min-width: 768px) {
+    height: 100vh;
   }
 `;
 export const StyledTitle = styled.h1`
@@ -25,5 +46,10 @@ export const StyledTitle = styled.h1`
 
   span {
     font-size: ${(props) => props.theme.font.size.medium};
+  }
+
+  @media (min-width: 768px) {
+    line-height: 0.8;
+    letter-spacing: 1.5rem;
   }
 `;

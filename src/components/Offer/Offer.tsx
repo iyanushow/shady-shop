@@ -1,4 +1,5 @@
-import { StyledSection, StyledOffer, Data, Title, Desc } from './Offer.styles';
+import { StyledSection } from '../styledcomponents/Section.styles';
+import { StyledOffer, Data, Title, Desc } from './Offer.styles';
 
 interface Props {}
 const Offer = ({}: Props) => {
