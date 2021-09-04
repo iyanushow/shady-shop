@@ -1,4 +1,5 @@
-import { StyledSection, StyledContainer, StyledTitle, StyledBox } from './Collection.styles';
+import { StyledSection } from '../styledcomponents/Section.styles';
+import { StyledContainer, StyledTitle, StyledBox } from './Collection.styles';
 
 interface Props {}
 const Collection = ({}: Props) => {

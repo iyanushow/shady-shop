@@ -1,5 +1,6 @@
 import Product from '../Product';
-import { StyledContainer, StyledSection } from './Featured.styles';
+import { StyledSection } from '../styledcomponents/Section.styles';
+import { StyledContainer } from './Featured.styles';
 
 const data: { id: number; title: string; image: string; price: number }[] = [
   {

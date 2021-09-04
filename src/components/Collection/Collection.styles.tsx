@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
-export const StyledSection = styled.section`
-  /* background-color: ${(props) => props.theme.color.gray}; */
-  padding: 3rem 0;
-`;
 export const StyledContainer = styled.div`
   row-gap: 2rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-rows: 1fr;
+  }
 `;
 export const StyledTitle = styled.h2`
   font-size: ${(props) => props.theme.font.size.medium};
@@ -37,8 +38,15 @@ export const StyledBox = styled.div`
   }
   img {
     width: 100px;
+    @media (min-width: 768px) {
+      width: 130px !important;
+    }
   }
   &:hover {
     transform: translateY('-5rem');
+  }
+
+  @media (min-width: 768px) {
+    padding: 0.5rem 3rem 0 !important;
   }
 `;
