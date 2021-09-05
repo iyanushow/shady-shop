@@ -1,8 +1,9 @@
-<h1 align="center"><a href='https://shady-store-front.netlify.app/'>Shady Store</a></h1>
+<h1 align="center"><a href='https://shady-coutures.netlify.app'>Shady Couture</a></h1>
 
 ### Overview
 
-![Screenshot (77)](https://user-images.githubusercontent.com/62676042/130693434-d65402fc-981f-4c9d-8b29-210f993b6a1a.png)
+![Screenshot (144)](https://user-images.githubusercontent.com/62676042/132129599-0ffd5f54-99d7-4131-859f-aadaf84592b8.png)
+
 Code repository for the responsive user interface of a fashion website. Build this project to master working with typescript in react projects. This project is built using typescript-react and styled-components
 
 ### Built With
