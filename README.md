@@ -1,4 +1,4 @@
-<h1 align="center"><a href='https://github.com/iyanushow/shady-shop'>Shady Couture</a></h1>
+<h1 align="center"><a href='https://shady-coutures.netlify.app'>Shady Couture</a></h1>
 
 ### Overview
 
